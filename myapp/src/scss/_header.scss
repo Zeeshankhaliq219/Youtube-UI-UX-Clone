@@ -1,0 +1,14 @@
+input:focus{
+    outline: none;
+}
+.btn-group{
+    display: flex;
+    border:none
+}
+
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+    background-color: var(--bs-btn-active-bg);
+    border-color: none;
+    border: none;
+    z-index: 1;
+}
