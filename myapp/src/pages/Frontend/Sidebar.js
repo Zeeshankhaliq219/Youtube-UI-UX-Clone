@@ -1,5 +1,6 @@
 import React from 'react'
-import {sidebarData} from "../../Data/SideBarData";
+import { sidebarData } from "../../Data/SideBarData";
+import Footer from '../../components/footer';
 
 export default function Sidebar() {
   return (
@@ -18,9 +19,10 @@ export default function Sidebar() {
                 <div className="col-9">
                   <span className='fs-6'>{side.title}</span>
                 </div>
-                {side.id == 3 && <hr/> }
-                {side.id == 7 && <hr/> }
-                {side.id == 13 && <hr/> }
+                {side.id === 3 && <hr/> }
+                {side.id === 7 && <hr/> }
+                {side.id === 13 && <hr/> }
+                {side.id === 17 && <hr/> }
               </div>
 
           </div>
@@ -29,7 +31,7 @@ export default function Sidebar() {
           </>
         )
       })}
-      
+      <Footer />
     </>
   )
 }
