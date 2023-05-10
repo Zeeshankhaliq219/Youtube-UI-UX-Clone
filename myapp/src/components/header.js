@@ -2,8 +2,8 @@ import React from "react";
 
 export default function header() {
   return (
-    <div className="container-fluid">
-      <div className="row my-1">
+    <div className="container-fluid position-fixed top-0">
+      <div className="row py-1 bg-white">
         <div className="col-3 align-items-center d-flex ">
           <i className="fa-solid fs-5 ms-1 fa-bars"></i>
           <div className="d-flex align-items-center ms-md-3">
